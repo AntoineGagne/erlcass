@@ -75,7 +75,7 @@
 -type paged_query_result()  :: {ok, list(), list(), boolean()} | {error, reason()}.
 
 -spec get_metrics() ->
-    {ok, list()} | {error, reason()}.
+    {ok, tuple()} | {error, reason()}.
 
 get_metrics() ->
     call(get_metrics).
